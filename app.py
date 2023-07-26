@@ -29,8 +29,8 @@ with st.sidebar:
 
 # Creating main page heading
 st.title("Object Detection")
-st.header('A header with _italics_ :blue[colors] and emojis :sunglasses:')
-
+st.caption('Updload a photo with this :blue[hand signals]: :+1:, :hand:, :i_love_you_hand_sign:, and :spock-hand:.')
+st.caption('Then click the :blue[Detect Objects] button and check the result.')
 # Creating two columns on the main page
 col1, col2 = st.columns(2)
 

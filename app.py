@@ -9,18 +9,24 @@ model_path = 'weights/best.pt'
 
 # Setting page layout
 st.set_page_config(
-    page_title="Object Detection using YOLOv8",  # Setting page title
+    page_title="Object Detection",  # Setting page title
     page_icon="🤖",     # Setting page icon
     layout="wide",      # Setting layout to wide
-    initial_sidebar_state="expanded"    # Expanding sidebar by default
+    initial_sidebar_state="expanded",    # Expanding sidebar by default
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+    
 )
 
 # Creating sidebar
 with st.sidebar:
-    st.header("Image/Video Config")     # Adding header to sidebar
+    st.header("Image Config")     # Adding header to sidebar
     # Adding file uploader to sidebar for selecting images
     source_img = st.file_uploader(
-        "Choose an image...", type=("jpg", "jpeg", "png", 'bmp', 'webp'))
+        "Upload an image...", type=("jpg", "jpeg", "png", 'bmp', 'webp'))
 
     # Model Options
     confidence = float(st.slider(

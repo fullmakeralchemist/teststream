@@ -13,11 +13,6 @@ st.set_page_config(
     page_icon="🤖",     # Setting page icon
     layout="wide",      # Setting layout to wide
     initial_sidebar_state="expanded",    # Expanding sidebar by default
-    menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
-    }
     
 )
 
@@ -33,7 +28,8 @@ with st.sidebar:
         "Select Model Confidence", 25, 100, 40)) / 100
 
 # Creating main page heading
-st.title("Object Detection using YOLOv8")
+st.title("Object Detection")
+st.header('A header with _italics_ :blue[colors] and emojis :sunglasses:')
 
 # Creating two columns on the main page
 col1, col2 = st.columns(2)

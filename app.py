@@ -31,7 +31,8 @@ with st.sidebar:
 st.title("Object Detection")
 st.caption('Updload a photo with this :blue[hand signals]: :+1:, :hand:, :i_love_you_hand_sign:, and :spock-hand:.')
 st.markdown('Then click the :blue[Detect Objects] button and check the result.')
-st.markdown("#:red[Para los instructores de Codigo Facilito este es el link de mi proyecto final:] [Object detection video and Webcam](https://objectdetectionwebcam.streamlit.app/)")
+st.markdown(":red[Para los instructores de Codigo Facilito este es el link de mi proyecto final le agregue cosas --->] [Object detection video and Webcam](https://objectdetectionwebcam.streamlit.app/)")
+st.markdown(":red[Lean mi blog por fa --->] [Object detection blog](https://lalodatos.medium.com/building-your-own-real-time-object-detection-app-roboflow-yolov8-and-streamlit-part-1-f577cf0aa6e5)")
 # Creating two columns on the main page
 col1, col2 = st.columns(2)
 

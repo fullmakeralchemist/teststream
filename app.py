@@ -30,7 +30,8 @@ with st.sidebar:
 # Creating main page heading
 st.title("Object Detection")
 st.caption('Updload a photo with this :blue[hand signals]: :+1:, :hand:, :i_love_you_hand_sign:, and :spock-hand:.')
-st.caption('Then click the :blue[Detect Objects] button and check the result.')
+st.markdown('Then click the :blue[Detect Objects] button and check the result.')
+st.markdown("#:red[Para los instructores de Codigo Facilito este es el link de mi proyecto final:] [Object detection video and Webcam](https://objectdetectionwebcam.streamlit.app/)")
 # Creating two columns on the main page
 col1, col2 = st.columns(2)
 
